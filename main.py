@@ -49,4 +49,4 @@ async def duck(ctx):
     '''По команде duck вызывает функцию get_duck_image_url'''
     image_url = get_duck_image_url()
     await ctx.send(image_url)
-bot.run("MTIwNjIxMTA4NjYyNjQ1NTYxNA.GYWHAV.CSKrPYO79hnM8o7DkU_XTRBEMWttK3y9npa5To")
+bot.run("token")
