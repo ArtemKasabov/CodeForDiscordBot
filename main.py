@@ -28,13 +28,21 @@ async def mem(ctx):
 
 @bot.command()
 async def mems(ctx):
-    img_name = random.choice(os.listdir('images'))
-    with open(f'images/{img_name}', 'rb') as f:
+    with open('images/mem1.jpg', 'rb') as f:
         # В переменную кладем файл, который преобразуется в файл библиотеки Discord!
         picture = discord.File(f)
    # Можем передавать файл как параметр!
     await ctx.send(file=picture)
 
+
+@bot.command()
+async def rickroll(ctx):
+    with open('images/mem3.jpg', 'rb') as f:
+        # В переменную кладем файл, который преобразуется в файл библиотеки Discord!
+        picture = discord.File(f)
+   # Можем передавать файл как параметр!
+    await ctx.send(file=picture)   
+             
 
 def get_duck_image_url():
     url = 'https://random-d.uk/api/random'
